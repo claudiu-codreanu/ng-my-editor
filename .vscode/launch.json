@@ -3,6 +3,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Electron",
+      "program": "${workspaceRoot}/dist/my-editor/shell.js",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",
