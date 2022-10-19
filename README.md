@@ -18,4 +18,21 @@ But it was fun, and I look forward to the remaining 7 chapters!
 
 <br>
 
-<!--By the way, I published the project live, using github pages. Please find it <a href="https://claudiu-codreanu.github.io/ng-weather-app/" target="_blank">**here**</a>.-->
+By the way, I didn't publish the project live, since it's supposed to be bundled and distributed as a native app. So if you want to give it a try, please follow the steps below:
+
+1. Clone the repo locally, in a folder of your choice
+2. Open a terminal and navigate to said folder
+3. Run the following commands:
+
+
+    `> npm install`
+
+    `> npm run build:electron`
+
+    `> npm run package`
+
+<br>
+
+The last two commands are defined in `package.json`, and they will produce the native app and its dependencies in the folder `dist/my-editor-current-platform/`.
+
+Navigate to that folder, and double-click `my-editor.exe` to launch the app. You should be able to type and format content, and it will be automatically saved to disk. After you close and reopen the app, the content from last time should be loaded again.
